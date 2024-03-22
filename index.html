@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário responsivo com HTML & CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container">
+        <header>Formulário de registro</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>Nome Completo</label>
+                <input type="text" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="input-box">
+                <label>Email</label>
+                <input type="text" placeholder="Digite seu Email" required>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label>Número de Telefone</label>
+                    <input type="number" placeholder="Digite seu número" required>
+                </div>
+                <div class="input-box">
+                    <label>Data de Aniversário</label>
+                    <input type="date" placeholder="Digite seu Aniversário" required>
+                </div>
+            </div>
+            <div class="gender-box">
+                <h3>Gênero</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-homem" name="genero">
+                        <label for="check-homem">Homem</label>
+                    </div>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="check-mulher" name="genero">
+                            <label for="check-mulher">Mulher</label>
+                        </div>
+                        <div class="gender-option">
+                            <div class="gender">
+                                <input type="radio" id="check-outro" name="genero">
+                                <label for="check-outro">Prefiro não dizer</label>
+                            </div>
+                </div>
+            </div>
+            <div class="input-box adress">
+                <label>Endereço</label>
+                <input type="text" placeholder="Digite seu Endereço" required>
+                <input type="text" placeholder="Digite seu Estado" required>
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Qual sua nacionalidade?</option>
+                            <option>Brasileiro</option>
+                            <option>Argentino</option>
+                            <option>Paraguaio</option>
+                            <option>Boliviano</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Digite sua Cidade" required>
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="Digite sua Região" required>
+                    <input type="number" placeholder="Digite seu Código-Postal" required>
+                </div>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
